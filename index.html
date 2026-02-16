@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h1>JSDoc</h1>
+            - It's hard to imagine modern applications without some kind of
+            typing.<br />
+            - As we know, JavaScript is a dynamically typed language.<br />
+            - But that doesn't mean JavaScript can't be typed.
+            <aside class="notes">
+              It's hard to imagine modern applications without some kind of
+              typing.<br />
+              As we know, JavaScript is a dynamically typed language.<br />
+              But that doesn't mean JavaScript can't be typed.
+            </aside>
+          </section>
+          <section>
+            The TypeScript compiler can obtain type information when it is
+            included in JSDoc comments
+            <aside class="notes">
+              Even if your application is already old and it is impossible to
+              connect TypeScript, don’t be discouraged<br />
+              You can softly connect TypeScript to increase the reliability of
+              your applications using JSDoc.
+            </aside>
+          </section>
+        </section>
+        <section>
+          JSDoc is a popular markup language used to annotate JavaScript code as
+          comments.
+          <aside class="notes">
+            JSDoc is a popular markup language used to annotate JavaScript code
+            as comments.
+          </aside>
+        </section>
+        <section>
+          <section>
+            The website https://jsdoc.app/ contains information on how to work
+            with JSDoc.
+            <aside class="notes">
+              The website https://jsdoc.app/ contains information on how to work
+              with JSDoc
+            </aside>
+          </section>
+
+          <section>
+            <h2>JSDoc official website</h2>
+            <img data-src="./assets/img/web.jpg" />
+            <aside class="notes">
+              This site is quite complex,<br />
+              and to understand it,<br />
+              you need to at least get started,<br />
+              which is what we'll do now,<br />
+              so that you can then safely navigate this site <br />
+              and find some answers for yourself.
+            </aside>
+          </section>
+        </section>
+
+        <section
+          data-markdown="./markdown.md"
+          data-separator="^\n\n\n"
+          data-separator-vertical="^\n\n"
+        ></section>
+        <section
+          data-markdown="./markdown2.md"
+          data-separator="^\r\n\r\n\r\n"
+          data-separator-vertical="^\r\n\r\n"
+        ></section>
+        <section>The End</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        showHiddenSlides: true,
+
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
